@@ -48,8 +48,8 @@ jobs:
     with:
       version: ${{ needs.get_tag.outputs.tag }}
     secrets:
-      DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-      DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+      DOCKERHUB_USERNAME_VP: ${{ secrets.DOCKERHUB_USERNAME_VP }}
+      DOCKERHUB_TOKEN_VP: ${{ secrets.DOCKERHUB_TOKEN_VP }}
 
   release-artifacts:
     needs: [get_tag]
